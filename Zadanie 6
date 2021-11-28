@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int n,tymcz,a=0;
+    cout<<"podaj ilosc liczb: ";
+    cin>>n;
+    if(n<=0){
+        cout<<"musi byc wieksza od zera";
+        return 0;}
+        srand(time(NULL));
+     for (int i = 0; i < n; i++){
+        tymcz=rand()%56-10;
+        if((tymcz%2)==0){
+            a+=tymcz;}
+    }
+ cout<<"suma liczb parzystych wynosi: "<<a;
+}
