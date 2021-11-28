@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int tymcz, ujemne, dodatnie, iloscu, iloscd;
+    ujemne = dodatnie = iloscu = iloscd = 0;
+    float n;
+    for (int i = 0; i < 10; i++){
+        cout<<"Podaj "<<i+1<<" liczbe: ";
+        cin>>tymcz;
+    if (tymcz>= 0){
+        dodatnie+=tymcz;
+        iloscd++;}
+        else{
+            ujemne+=tymcz;
+            iloscu++;}
+}
+    cout<<"Ilosc dodatnich: "<<iloscd<<endl;
+    cout<<"Ilosc ujemnych: "<< iloscu <<endl;
+    cout<<"Suma dodatnich: "<< dodatnie<<endl;
+    cout<<"Suma ujemnych: "<<ujemne;}
