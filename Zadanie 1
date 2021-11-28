@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, i, pkt;
+    float a = 0;
+    cout << "Podaj liczbe studentow:";
+    cin >> n;
+    i=n;
+while (i > 0)
+    {
+    cout << "Podaj liczbe punktów: ";
+    cin >> pkt;
+    a+= pkt;
+    i--;
+    };
+cout << "Srednia arytmetyczna punktow wynosi: " << a/n;
+}
