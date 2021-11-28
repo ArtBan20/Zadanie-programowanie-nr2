@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, i, pkt;
+    float  a = 0;
+    cout << "Podaj liczbe studnetow: ";
+    cin >> n;
+    i = n;
+    while (true){
+    cout << "Podaj liczbe punktow: ";
+    cin >> pkt;
+        if (pkt <= 100 && pkt >= 0) {
+            a += pkt;
+            i--;
+            if (i == 0) {
+                break;}
+        continue;}
+        else{
+            cout << "Nieodpowiedia ilosc punktow" << endl;
+            break;}
+        };
+cout << "Srednia arytmetyczna punktow: " << a/n;}
